@@ -5,10 +5,14 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtStrategy } from './jwt.strategy';
 import { UsersModule } from '../users/users.module';
+import { TicketsModule } from 'src/tickets/tickets.module';
+import { TicketCommentsModule } from 'src/ticket_comments/ticket_comments.module';
 
 @Module({
   imports: [
     UsersModule,
+    TicketsModule,
+    TicketCommentsModule,
     PassportModule,
     JwtModule.register({
       secret: 'mykey',
