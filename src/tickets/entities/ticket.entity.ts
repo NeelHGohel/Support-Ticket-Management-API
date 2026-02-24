@@ -1,3 +1,4 @@
+import { MinLength } from 'class-validator';
 import {
   Column,
   Entity,
@@ -11,11 +12,13 @@ export class Ticket {
   id: number;
 
   @Column()
+  @MinLength(5)
   title: string;
 
   @Column()
+  @MinLength(10)
   description: string;
 
-  @Column()
-  created_at: string;
+  @CreateDateColumn({ name: 'created_at' })
+  created_at: Date;
 }

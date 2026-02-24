@@ -16,7 +16,7 @@ import { TicketCommentsModule } from 'src/ticket_comments/ticket_comments.module
     PassportModule,
     JwtModule.register({
       secret: 'mykey',
-      signOptions: { expiresIn: '1d' },
+      signOptions: { expiresIn: '1h' },
     }),
   ],
   controllers: [AuthController],

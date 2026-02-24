@@ -1,10 +1,4 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Body,
-  UseGuards,
-} from '@nestjs/common';
+import { Controller, Get, Post, Body, UseGuards } from '@nestjs/common';
 import { TicketCommentsService } from './ticket_comments.service';
 import { CreateTicketCommentDto } from './dto/create-ticket_comment.dto';
 import { JwtAuthGuard } from 'src/auth/jwt.guard';
