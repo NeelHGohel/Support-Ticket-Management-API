@@ -16,6 +16,6 @@ export class Ticket {
   @Column()
   description: string;
 
-  @CreateDateColumn({ name: 'created_at' })
-  created_at: Date;
+  @Column()
+  created_at: string;
 }

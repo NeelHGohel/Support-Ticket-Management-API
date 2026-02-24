@@ -5,5 +5,5 @@ export class CreateTicketDto {
 
   description: string;
 
-  created_at: Date;
+  created_at: string;
 }
